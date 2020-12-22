@@ -10,13 +10,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #4095c7;
-  color: #ffffff;
+  background: #EEE;
+  color: #1b1b1b;
   font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
-body.dark {
-  background: #2900e2;
 }
 
 .flex {
@@ -29,12 +25,12 @@ body.dark {
 }
 
 header {
-  padding: 10px;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  background: #1b1b1b;
 }
 
 .wrap {
@@ -112,7 +108,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h4 {
@@ -120,7 +116,7 @@ h4 {
 }
 
 .light {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .bold {
@@ -136,26 +132,58 @@ h4 {
   font-weight: bold;
 }
 
-.sprite {
+.image {
   height: 75px;
   width: 75px;
   background-size: 400px;
   background-image: url("../icons/meteo.png");
   background-repeat: no-repeat;
   background-position: -20px 2px;
+  z-index: 5;
+  display: inline-block;
 }
 
-.sprite-current {
-  height: 100px;
-  width: 100px;
-  background-image: url("../icons/meteo.png");
-  background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: -68px -22px;
+.image-ensoleille {
+  background-position: -20px 2px;
+}
+
+.image-averses-de-pluie-faible, .image-averses-de-pluie-moderee, .image-pluie-moderee, .image-averses-de-pluie-forte, .image-nuit-avec-averses {
+  background-position: -20px -95px;
+}
+
+.image-fortement-nuageux {
+  background-position: -20px -200px;
+}
+
+.image-faiblement-nuageux {
+  background-position: -165px 2px;
+}
+
+.image-eclaircies, .image-stratus, .image-stratus-se-dissipant {
+  background-position: -304px 2px;
+}
+
+.image-nuit-nuageuse, .image-nuit-claire {
+  background-position: -160px -200px;
+}
+
+.image-faiblement-orageux, .image-fortement-orageux {
+  background-position: -170px -95px;
+}
+
+.image-ciel-voile, .image-brouillard {
+  background-position: -304px -90px;
+}
+
+.image-averses-de-neige-faible, .image-nuit-avec-averses-de-neige-faible {
+  background-position: -304px -200px;
 }
 
 .daycurrent {
   padding: 10px;
+  border: 1px white solid;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 #current {
@@ -200,7 +228,17 @@ h4 {
   margin-bottom: 2rem;
 }
 
+main {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
@@ -208,6 +246,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-color: #9e0dac;
+  background: #1b1b1b;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,13 +10,11 @@
 body{
   margin: 0;
   padding: 0;
-  background: #4095c7;
-  color: #ffffff;
+  background: #EEE;
+  color:rgb(27, 27, 27);
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
-body.dark{
-  background:  rgb(41, 0, 226);
-}
+
 
 
 .flex{
@@ -27,10 +25,11 @@ body.dark{
 
 //---------------------------------------------------- header ---------------------------------------------------------- 
 header{
-  padding: 10px;
+  padding: 1rem;
   display: flex;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  background: rgb(27, 27, 27);
+ 
 
 }
 .wrap{
@@ -39,6 +38,7 @@ header{
 
 #localisation{
   margin-top:-10px;
+ 
 }
 #formweather{
   display: flex;
@@ -107,20 +107,21 @@ h2{
 }
 
 .bi-geo-fill{
-
+  
   margin-right: 5px;
 }
 
 h3{
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
+ 
 }
 h4{
   font-size: 20px;
 
 }
 .light{
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .bold{
@@ -140,9 +141,11 @@ h4{
   
   font-size: 15px;
   font-weight: bold;
+  
 }
+//---------------------------------------------------- icon ---------------------------------------------------------- 
 
-.sprite{
+.image{
   height: 75px;
   width: 75px;
   background-size: 400px;
@@ -150,22 +153,51 @@ h4{
   background-image: url("../icons/meteo.png");
   background-repeat: no-repeat;
   background-position: -20px 2px;
-  
+  z-index: 5;
+  display: inline-block;
+ 
+}
+.image-ensoleille {
+  background-position: -20px 2px;
+}
+.image-averses-de-pluie-faible, .image-averses-de-pluie-moderee, .image-pluie-moderee, .image-averses-de-pluie-forte, .image-nuit-avec-averses {
+  background-position: -20px -95px;
 }
 
-.sprite-current{
-  height: 100px;
-  width: 100px;
-  //background-color: yellow;
-  background-image: url("../icons/meteo.png");
-  background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: -68px -22px;
-  
+.image-fortement-nuageux{
+  background-position: -20px -200px;
 }
+.image-faiblement-nuageux {
+  background-position: -165px 2px;
+}
+
+.image-eclaircies, .image-stratus, .image-stratus-se-dissipant{
+  background-position: -304px 2px;}
+
+.image-nuit-nuageuse,.image-nuit-claire{
+  background-position: -160px -200px;
+}
+
+.image-faiblement-orageux,.image-fortement-orageux{
+  background-position: -170px -95px;}
+
+.image-ciel-voile, .image-brouillard  {
+    background-position: -304px -90px;
+  }
+  
+.image-averses-de-neige-faible,.image-nuit-avec-averses-de-neige-faible {
+    background-position: -304px -200px;}
+
+
+//---------------------------------------------------- icon fin ---------------------------------------------------------- 
+
 
 .daycurrent{
   padding:10px;
+  border: 1px white solid;
+  margin-right: 3px;
+  margin-left: 3px;
+  
 }
 
 #current{
@@ -213,18 +245,27 @@ h4{
   margin-bottom: 2rem;
 }
 
-
+main{
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  width: 90%;
+}
 
 //---------------------------------------------------- footer ---------------------------------------------------------- 
 footer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
   align-items: center;
   color:white; 
-  background-color: rgb(158, 13, 172);
+  background: rgb(27, 27, 27);
 }
-
 
 
 

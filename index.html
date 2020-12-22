@@ -30,9 +30,7 @@
     <title itemprop="name">Weather - Scalais Camille</title>
   </head>
 
-
   <body class="fullscreen">        
-
       <header>      
         <div class="localisation">
           <a href="" id="localisation">
@@ -40,26 +38,17 @@
               <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
             </svg></a>
         </div>
-        <!-- <div class="search-city">
-          <form action="" id="formweather">
-              <input type="text" id="ville" placeholder="search city"> 
-              <button id="go" class='btn btn-primary'>go</button>
-          </form>
-      </div> -->
-
       <div class="wrap">
         <div class="search-city">
           <form action="" id="formweather">
-           <input type="text" class="searchTerm" id="ville" placeholder="search city">
+           <input type="text" class="searchTerm" id="ville" placeholder="Search city">
            <button type="submit" id="go" class="searchButton">
              <i class="fa fa-search"></i>
           </button>
        </form> 
       </div>
      </div>
-
       </header><!--header-->
-
 
         <div class="container-fluid">
           <div class="row daycurrent">
@@ -69,16 +58,17 @@
                 <h1>Nivelles</h1>
                 <h2>Soleil</h2>
               </div><!--localisation-->
-              <div class="sprite-current center icone" id="current-icon">
+              <div class="image center" id="current-icon">
               </div>
             
             <div class="row top20">
               <div class="col">
                 <h4 class="left light heure">12h30</h4>
                 <h4 class="left light date">16.12.20</h4>
+                
               </div><!--col-->
                 <span class="vertical-line"></span>
-              <div class="col droit">
+              <div class="col">
                 <div class="temp">
                   <i class="fas fa-temperature-high temp"></i>
                   <h4 class="right bold temperature lightDarkF light">11 C°</h4>
@@ -92,7 +82,7 @@
         
           </div> <!--current-->
         </div> <!--row-->
-
+      <div class="container">
         <div class="row day1">
           <div class="col flex">
             <div class="date"><h3>Jour</h3></div>
@@ -102,7 +92,7 @@
             <div class="temperaturemin"></div>
           </div>
           <div class="col">
-            <div class="sprite"></div>
+            <div class="image"></div>
           </div>
         </div> <!--row-->
 
@@ -115,7 +105,7 @@
             <div class="temperaturemin"></div>
           </div>
           <div class="col">
-            <div class="sprite"></div>
+            <div class="image"></div>
           </div>
         </div> <!--row-->
 
@@ -128,7 +118,7 @@
             <div class="temperaturemin"></div>
           </div>
           <div class="col">
-            <div class="sprite"></div>
+            <div class="image"></div>
           </div>
         </div> <!--row-->
 
@@ -141,22 +131,20 @@
             <div class="temperaturemin"></div>
           </div>
           <div class="col">
-            <div class="sprite"></div>
+            <div class="image"></div>
           </div>
         </div> <!--row-->
-
+      </div><!--container-->
       </div> <!--container-fluid-->
- 
+   
     
     <footer class="page-footer">
-      <div class="col-12 col-md-6 besoin-app d-none" id="besoinapp">
+      <div class="col-12" id="besoinapp">
         <p>Téléchargez l'application Weather</p>
         <button id="btnAdd" class="btn btn-primary d-none">Installer</button>
       </div>
     </footer> <!-- Footer -->
    
-
-
   <!-- Scripts -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -216,8 +204,6 @@
     
       
   </script>
-
-
   </body>
   </html>
 
