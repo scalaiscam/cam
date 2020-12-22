@@ -8,7 +8,7 @@ self.addEventListener('install', function(e) {
           '/img/Home.png',
           '/index.html',
           '/css/bootstrap.min.css',
-          '/css/style.css',
+          '/scss/style.css',
           '/js/jquery-3.5.1.min.js',
           '/js/scripts.js',
         ]);
