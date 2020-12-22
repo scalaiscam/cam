@@ -1,59 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
 .fullscreen {
-  height: 100%; 
+  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+}
 
-body{
+body {
   margin: 0;
   padding: 0;
   background: #4095c7;
   color: #ffffff;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
-body.dark{
-  background:  rgb(41, 0, 226);
+
+body.dark {
+  background: #2900e2;
 }
 
-
-.flex{
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
-//---------------------------------------------------- header ---------------------------------------------------------- 
-header{
+header {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
 }
-.wrap{
+
+.wrap {
   margin-left: auto;
 }
 
-#localisation{
-  margin-top:-10px;
+#localisation {
+  margin-top: -10px;
 }
-#formweather{
+
+#formweather {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: end;
-
 }
 
-.search-city{
+.search-city {
   margin-left: auto;
 }
-
 
 .search-city {
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -68,7 +75,7 @@ header{
   color: #9DBFAF;
 }
 
-.searchTerm:focus{
+.searchTerm:focus {
   color: #00B4CC;
 }
 
@@ -84,149 +91,123 @@ header{
   font-size: 20px;
 }
 
-
-
-//---------------------------------------------------- main ---------------------------------------------------------- 
-
-.row{
-  
-  align-items: center;
+.row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
-
-h1{
+h1 {
   font-weight: 200;
   text-align: center;
-
 }
 
-h2{
-  padding:15px;
-
+h2 {
+  padding: 15px;
 }
 
-.bi-geo-fill{
-
+.bi-geo-fill {
   margin-right: 5px;
 }
 
-h3{
+h3 {
   font-size: 20px;
   font-weight: 200;
 }
-h4{
-  font-size: 20px;
 
+h4 {
+  font-size: 20px;
 }
-.light{
+
+.light {
   font-weight: 200;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-
-
-.localisation{
-  
+.localisation {
   text-align: center;
-  
-
 }
 
-.temperaturemax, .temperaturemin{
-  
+.temperaturemax, .temperaturemin {
   font-size: 15px;
   font-weight: bold;
 }
 
-.sprite{
+.sprite {
   height: 75px;
   width: 75px;
   background-size: 400px;
-  // background-color: yellow;
   background-image: url("../icons/meteo.png");
   background-repeat: no-repeat;
   background-position: -20px 2px;
-  
 }
 
-.sprite-current{
+.sprite-current {
   height: 100px;
   width: 100px;
-  //background-color: yellow;
   background-image: url("../icons/meteo.png");
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: -68px -22px;
-  
 }
 
-.daycurrent{
-  padding:10px;
+.daycurrent {
+  padding: 10px;
 }
 
-#current{
+#current {
   text-align: center;
   margin-bottom: 2rem;
   width: 100%;
-  
 }
 
-
-.center{
+.center {
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
-.vertical-line{
-  border-left: 2px solid rgb(255, 255, 255);
+.vertical-line {
+  border-left: 2px solid white;
   display: inline-block;
   height: 70px;
   margin: 0 20px;
 }
 
-.top20{
+.top20 {
   padding-top: 20px;
 }
 
-.left{
+.left {
   margin-right: -80px;
-  
 }
 
-
-.temp,.humid{
-  
+.temp, .humid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 15px;
   font-size: 15px;
   margin-top: 3px;
-  
 }
 
-.day4{
+.day4 {
   margin-bottom: 2rem;
 }
 
-
-
-//---------------------------------------------------- footer ---------------------------------------------------------- 
-footer{
+footer {
   padding-top: 3rem;
   padding-bottom: 2rem;
   text-align: center;
-  align-items: center;
-  color:white; 
-  background-color: rgb(158, 13, 172);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #9e0dac;
 }
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

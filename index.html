@@ -16,10 +16,10 @@
     <link rel = "manifest" href = "manifest.json">
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/b052d01902.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <meta name="theme-color" content="#eb5252"/>
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <!-- multiple icon -->
     <meta name="msapplication-square310x310logo" content="img/Home.png">
     <link rel="apple-touch-icon" href="img/Home.png">
@@ -32,25 +32,32 @@
 
 
   <body class="fullscreen">        
-    <button class="darkModeSwitch" id="switch">
-      <span><i class="fas fa-sun"></i></span>
-      <span><i class="fas fa-moon"></i></span>
-    </button>  
-      <header>
-        <div class="search-city">
+
+      <header>      
+        <div class="localisation">
+          <a href="" id="localisation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-geo-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+            </svg></a>
+        </div>
+        <!-- <div class="search-city">
           <form action="" id="formweather">
-              <input type="text" id="ville"> 
+              <input type="text" id="ville" placeholder="search city"> 
               <button id="go" class='btn btn-primary'>go</button>
           </form>
-      </div>
+      </div> -->
 
-      <div class="localisation">
-          <a href="" id="localisation"><svg xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-              </svg></a>
+      <div class="wrap">
+        <div class="search-city">
+          <form action="" id="formweather">
+           <input type="text" class="searchTerm" id="ville" placeholder="search city">
+           <button type="submit" id="go" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+       </form> 
       </div>
+     </div>
+
       </header><!--header-->
 
 
@@ -58,10 +65,9 @@
           <div class="row daycurrent">
             <div id="current">
               <div class="localisation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
-                </svg>
+               
                 <h1>Nivelles</h1>
+                <h2>Soleil</h2>
               </div><!--localisation-->
               <div class="sprite-current center icone" id="current-icon">
               </div>
@@ -72,9 +78,15 @@
                 <h4 class="left light date">16.12.20</h4>
               </div><!--col-->
                 <span class="vertical-line"></span>
-              <div class="col">
-                <h4 class="right bold temperature lightDarkF light">11 C°</h4>
-                <h4 class="right light humidite lightDarkF light">30 %</h4>
+              <div class="col droit">
+                <div class="temp">
+                  <i class="fas fa-temperature-high temp"></i>
+                  <h4 class="right bold temperature lightDarkF light">11 C°</h4>
+                </div>
+                <div class="humid">
+                  <i class="fas fa-tint humid"></i>
+                  <h4 class="right light humidite lightDarkF light">30 %</h4>
+                </div>
               </div> <!--col-->
             </div> <!--row-->
         
@@ -136,15 +148,13 @@
       </div> <!--container-fluid-->
  
     
-    <!-- Footer -->
-    <footer class="page-footer font-small indigo">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="#"> Scalais Camille</a>
+    <footer class="page-footer">
+      <div class="col-12 col-md-6 besoin-app d-none" id="besoinapp">
+        <p>Téléchargez l'application Weather</p>
+        <button id="btnAdd" class="btn btn-primary d-none">Installer</button>
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </footer> <!-- Footer -->
+   
 
 
   <!-- Scripts -->
@@ -205,7 +215,8 @@
   });
     
       
-      </script>
+  </script>
+
 
   </body>
   </html>
