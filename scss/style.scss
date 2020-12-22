@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
+.fullscreen {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #84b5ec;
+  color: #ffffff;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+body.dark{
+  background:  rgb(41, 0, 226);
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+//---------------------------------------------------- darkmode ---------------------------------------------------------- 
+#switch{
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:75%;
+}
+.darkModeSwitch {
+  background: rgb(41, 0, 226);
+  display:flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.darkModeSwitch span{
+  width:30px;
+  height:30px;
+  line-height:30px;
+  display:block;
+  color:#fff;
+  background: none;
+}
+.darkModeSwitch::after{
+  display:block;
+  background: #fffbf5;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top:0;
+  left:0;
+  right:unset;
+  border-radius: 3rem;
+  transition: all .5s ease;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+  content: "";
+}
+
+.darkModeSwitch.active{
+  background: #84b5ec;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+}
+//---------------------------------------------------- header ---------------------------------------------------------- 
+header{
+  padding: 5px;
+
+  
+}
+
+//---------------------------------------------------- main ---------------------------------------------------------- 
+
+main{
+  padding: 10px;
+  
+  
+}
+h1{
+  font-weight: 200;
+
+}
+
+h2{
+  padding:15px;
+
+}
+
+.bi-geo-fill{
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 200;
+}
+h4{
+  font-size: 20px;
+
+}
+.light{
+  font-weight: 200;
+}
+.bold{
+  font-weight: bold;
+}
+
+h5{
+  color:red;
+
+}
+
+.localisation{
+  display: flex;
+  text-align: center;
+
+}
+
+.temperaturemax, .temperaturemin{
+  
+  font-size: 15px;
+  font-weight: bold;
+}
+.row{
+  margin-bottom: 15px;
+}
+.sprite{
+  height: 75px;
+  width: 75px;
+  background-size: 400px;
+  // background-color: yellow;
+  background-image: url("../icons/meteo.png");
+  background-repeat: no-repeat;
+  background-position: -20px 2px;
+  
+}
+
+.sprite-current{
+  height: 100px;
+  width: 100px;
+  //background-color: yellow;
+  background-image: url("../icons/meteo.png");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: -68px -22px;
+  
+}
+
+
+#current{
+  text-align: center;
+  
+  width: 100%;
+  
+}
+
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+.vertical-line{
+  border-left: 2px solid rgb(255, 255, 255);
+  display: inline-block;
+  height: 70px;
+  margin: 0 20px;
+}
+
+.top20{
+  padding-top: 20px;
+}
+
+.left{
+  margin-right: -100px;
+  
+}
+.right{
+  margin-left: -100px;
+}
+
+//---------------------------------------------------- footer ---------------------------------------------------------- 
+
+footer{
+  padding: 10px;
+  background-color: rgb(255, 0, 212);
+}
+
+
