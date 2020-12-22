@@ -18,17 +18,14 @@ body.dark{
   background:  rgb(41, 0, 226);
 }
 
+
 .flex{
   display: flex;
   align-items: center;
 }
 
 //---------------------------------------------------- darkmode ---------------------------------------------------------- 
-#switch{
-  margin-top:10px;
-  margin-bottom: 10px;
-  margin-left:75%;
-}
+
 .darkModeSwitch {
   background: rgb(41, 0, 226);
   display:flex;
@@ -74,17 +71,148 @@ body.dark{
 //---------------------------------------------------- header ---------------------------------------------------------- 
 header{
   padding: 5px;
-
+  display: flex;
+  background-color: red;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
   
 }
+
+//CODE du search : https://codepen.io/milanraring/pen/qBdVwOP?__cf_chl_captcha_tk__=cdf8b483f13e88940c2f52dc71be0e0024fe0768-1608631829-0-Ac_t0yZ_oBir2Ja5_KGwjzyLLPDi0fC0Y9m9P9B4Zxrzrf3-7d3KKUOWLTu5OSbhuI-TrmNXwVtbeXthARx-l6I1jlaOCimNS8gQ3jgxcyoNpCJsyrT5RdNg0wt2LMidMv_uNKgj6S6mJVZH9yQa16ls-Ikhj_xwpsU_feddfn2P6XrMIX6HiBIVmEHe2Xpe-PyE4jDxOqTTx7zTsPpiFkGq9rVY9ZUF99zKCBniosIiWQ920dlcUyVL9IaYyblDqGYLq66_YCBdtBFwbWvEIgU03ZhVPtFwfPxQSOcQgAmiOeQk4042JZZOOA4e9vBPZtSJLcJHaDOgKutk2ac4Br5hL5FQyuxff9JsVaj5V1XEVZLc8YdYLj0NB4jYb8HgTwdw-_X6VaOMdnzLvZTP_yh1ZIr2NmxqQtJhxBzf6_wcIMGdI3XeCFHPZ4SYfAbC4rxckLG2ClobaLDB2t_XKs6KldRhAxEjOF7skeboE5Xgfsj2Vi3Tw8NEdKqvewWwpFInItNikfJ0acocEm4FP34rVEagWm_KVtq_p0cJXeX1hwLZSv0H8g3_5TnFse6vuZ1gfqh8tPO76lFSpfVRqCtw6zZcvJzZuFEGv7k6hjrJ
+.search {
+  --background: #ffffff;
+  --text-color: #414856;
+  --primary-color: #4F29F0;
+  --border-radius: 10px;
+  --width: 190px;    
+  --height: 55px;      
+  background: var(--background);
+  width: auto;
+  height: var(--height);
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(#414856, .05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input[type="text"] {
+    position: relative;
+    width: var(--height);
+    height: var(--height);
+    font: 400 16px 'Varela Round', sans-serif;
+    color: var(--text-color);
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 0 0 40px;
+    transition: width .6s ease;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+    &:focus {
+      z-index: 0;
+      opacity: 1;
+      width: var(--width);
+      ~ .symbol {
+        &::before {
+          width: 0%;
+        }
+        &:after {
+          clip-path: inset(0% 0% 0% 100%);
+          transition: clip-path .04s linear .105s;
+        }
+        .cloud {
+          top: -30px;
+          left: -30px;
+          transform: translate(0, 0);
+          transition: all .6s ease;
+        }
+        .lens {
+          top: 20px;
+          left: 15px;
+          transform: translate(0, 0);
+          fill: var(--primary-color);
+          transition: top .5s ease .1s, left .5s ease .1s, fill .3s ease;
+        }
+      }
+    }
+  }
+  .symbol {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      content:"";
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+      z-index: -1;
+      transition: width .6s ease;
+    }
+    &:after {
+      content:"";
+      position: absolute;
+      top: 21px;
+      left: 21px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      z-index: 1;
+      clip-path: inset(0% 0% 0% 0%);
+      transition: clip-path .04s linear .225s;
+    }
+    .cloud,
+    .lens {
+      position: absolute;
+      fill: #fff;
+      stroke: none;
+      top: 50%;
+      left: 50%;
+    }
+    .cloud {
+      width: 35px;
+      height: 32px;
+      transform: translate(-50%, -60%);
+      transition: all .6s ease;
+    }
+    .lens {
+      fill: #fff;
+      width: 16px;
+      height: 16px;
+      z-index: 2;
+      top: 24px;
+      left: 24px;
+      transition: top .3s ease, left .3s ease, fill .2s ease .2s;
+    }
+  }
+}
+// fin code search 
+
+
 
 //---------------------------------------------------- main ---------------------------------------------------------- 
+.container-bottom,.containertop{padding:10px}
 
-main{
-  padding: 10px;
-  
-  
+.containertop{
+  background-color: indianred;
+  text-align: center;
 }
+
+.container-bottom{
+  background-color: indigo;
+}
+
+
 h1{
   font-weight: 200;
 
@@ -191,11 +319,18 @@ h5{
   margin-left: -100px;
 }
 
+
+
 //---------------------------------------------------- footer ---------------------------------------------------------- 
 
 footer{
   padding: 10px;
   background-color: rgb(255, 0, 212);
 }
+
+
+
+
+
 
 
