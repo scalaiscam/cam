@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 {
     "short_name": "Weather Camille",
@@ -7,15 +8,30 @@
     "icons": [
       {
         "src": "/images/icon-512.png",
+=======
+{
+    "short_name": "Weather",
+    "name": "PWA Camille",
+    "description": "PWA météo crée dans le Lab 3TI web 2020-2021",
+    "icons": [
+      {
+        "src": "/img/Home.png",
+>>>>>>> aa25f70a044b66d42178048696f94c60a7fc11cb
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "any maskable"
       }
     ],
     "start_url": "/index.html",
+<<<<<<< HEAD
     "background_color": "#3367D6",
     "display": "fullscreen",
     "theme_color": "#3367D6",
+=======
+    "background_color": "black",
+    "display": "fullscreen",
+    "theme_color": "white",
+>>>>>>> aa25f70a044b66d42178048696f94c60a7fc11cb
     "shortcuts": [
       
     ]

@@ -1,0 +1,262 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+  color:rgb(27, 27, 27);
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+
+//---------------------------------------------------- header ---------------------------------------------------------- 
+header{
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  background: rgb(27, 27, 27);
+ 
+
+}
+.wrap{
+  margin-left: auto;
+}
+
+#localisation{
+  margin-top:-10px;
+ 
+}
+#formweather{
+  display: flex;
+  margin-right: end;
+
+}
+
+.search-city{
+  margin-left: auto;
+}
+
+
+.search-city {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+//---------------------------------------------------- main ---------------------------------------------------------- 
+
+.row{
+  
+  align-items: center;
+}
+
+
+
+h1{
+  font-weight: 200;
+  text-align: center;
+
+}
+
+h2{
+  padding:15px;
+
+}
+
+.bi-geo-fill{
+  
+  margin-right: 5px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 300;
+ 
+}
+h4{
+  font-size: 20px;
+
+}
+.light{
+  font-weight: 300;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
+.localisation{
+  
+  text-align: center;
+  
+
+}
+
+.temperaturemax, .temperaturemin{
+  
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+//---------------------------------------------------- icon ---------------------------------------------------------- 
+
+.image{
+  height: 75px;
+  width: 75px;
+  background-size: 400px;
+  // background-color: yellow;
+  background-image: url("../images/meteo.png");
+  background-repeat: no-repeat;
+  background-position: -20px 2px;
+  z-index: 5;
+  display: inline-block;
+ 
+}
+.image-ensoleille {
+  background-position: -20px 2px;
+}
+.image-averses-de-pluie-faible, .image-averses-de-pluie-moderee, .image-pluie-moderee, .image-averses-de-pluie-forte, .image-nuit-avec-averses {
+  background-position: -20px -95px;
+}
+
+.image-fortement-nuageux{
+  background-position: -20px -200px;
+}
+.image-faiblement-nuageux {
+  background-position: -165px 2px;
+}
+
+.image-eclaircies, .image-stratus, .image-stratus-se-dissipant{
+  background-position: -304px 2px;}
+
+.image-nuit-nuageuse,.image-nuit-claire{
+  background-position: -160px -200px;
+}
+
+.image-faiblement-orageux,.image-fortement-orageux{
+  background-position: -170px -95px;}
+
+.image-ciel-voile, .image-brouillard  {
+    background-position: -304px -90px;
+  }
+  
+.image-averses-de-neige-faible,.image-nuit-avec-averses-de-neige-faible {
+    background-position: -304px -200px;}
+
+
+//---------------------------------------------------- icon fin ---------------------------------------------------------- 
+
+
+.daycurrent{
+  padding:10px;
+  border: 1px white solid;
+  margin-right: 3px;
+  margin-left: 3px;
+  
+}
+
+#current{
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  
+}
+
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+.vertical-line{
+  border-left: 2px solid rgb(255, 255, 255);
+  display: inline-block;
+  height: 70px;
+  margin: 0 20px;
+}
+
+.top20{
+  padding-top: 20px;
+}
+
+.left{
+  margin-right: -80px;
+  
+}
+
+
+.temp,.humid{
+  
+  display: flex;
+  margin-right: 15px;
+  font-size: 15px;
+  margin-top: 3px;
+  
+}
+
+.day4{
+  margin-bottom: 2rem;
+}
+
+main{
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  width: 90%;
+}
+
+//---------------------------------------------------- footer ---------------------------------------------------------- 
+footer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  align-items: center;
+  color:white; 
+  background: rgb(27, 27, 27);
+}
+
+
+
+
+

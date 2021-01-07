@@ -5,10 +5,17 @@ self.addEventListener('install', function(e) {
         return cache.addAll([
           '/',
         //   '/images/icons-192.png',
+<<<<<<< HEAD
           '/images/icon-512.png',
           '/index.html',
           '/css/bootstrap.min.css',
           '/css/style.css',
+=======
+          '/img/Home.png',
+          '/index.html',
+          '/css/bootstrap.min.css',
+          '/scss/style.css',
+>>>>>>> aa25f70a044b66d42178048696f94c60a7fc11cb
           '/js/jquery-3.5.1.min.js',
           '/js/scripts.js',
         ]);
@@ -24,5 +31,9 @@ self.addEventListener('install', function(e) {
     return response || fetch(event.request);
         })
         );
+<<<<<<< HEAD
         });
   
+=======
+        });
+>>>>>>> aa25f70a044b66d42178048696f94c60a7fc11cb
